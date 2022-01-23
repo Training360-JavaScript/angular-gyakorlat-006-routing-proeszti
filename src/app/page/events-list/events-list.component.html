@@ -1,0 +1,21 @@
+<table class="table table-striped mt-3">
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Location</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of eventList | async"></tr>
+    <td>{{ eventList }}</td>
+    <td>{{ eventList }}</td>
+    <td>{{ eventList }}</td>
+    <td>{{ eventList }}</td>
+    <td>
+      <button class="btn btn-info"><i class="fa fa-eye"></i></button>
+    </td>
+  </tbody>
+</table>
