@@ -5,5 +5,5 @@ export class Event {
   name: string = "";
   date: string = "";
   time: string = "";
-  location: Location | undefined;
+  location: Location | null = null;
 }

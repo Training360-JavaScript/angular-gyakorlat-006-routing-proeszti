@@ -9,13 +9,14 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of eventList | async"></tr>
-    <td>{{ eventList }}</td>
-    <td>{{ eventList }}</td>
-    <td>{{ eventList }}</td>
-    <td>{{ eventList }}</td>
-    <td>
-      <button class="btn btn-info"><i class="fa fa-eye"></i></button>
-    </td>
+    <tr *ngFor="let data of eventList">
+      <td>{{ data.name }}</td>
+      <td>{{ data.date }}</td>
+      <td>{{ data.time }}</td>
+      <td>{{ data.location }}</td>
+      <td>
+        <button class="btn btn-info"><i class="fa fa-eye"></i></button>
+      </td>
+    </tr>
   </tbody>
 </table>
